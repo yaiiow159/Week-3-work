@@ -22,14 +22,14 @@
             left: 0;
 
             h2{
-                @media (max-width: 375px){
+                @media (max-width: 414px){
                     font-size: 28px;
                     line-height: 80px;
                 }
             }
 
             img{
-                @media (max-width:375px){
+                @media (max-width:414px){
                     width: 24px;
                     height: auto;
                 }

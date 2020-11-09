@@ -657,7 +657,7 @@ body {
   opacity: 1;
 }
 
-.design-section .img-md-text p {
+.design-section .img-md-text h2 {
   position: absolute;
   left: 28%;
   top: 42%;
@@ -669,7 +669,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .design-section .img-md-text p {
+  .design-section .img-md-text h2 {
     font-size: 32px;
     line-height: 25px;
   }
@@ -930,7 +930,6 @@ body {
 .banner-index {
   background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/banner.png);
   height: 732px;
-  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -969,15 +968,16 @@ body {
 }
 
 .banner-content {
-  position: absolute;
-  bottom: 32%;
-  right: 17%;
-}
-
-@media (max-width: 768px) {
-  .banner-content {
-    right: 2%;
-  }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .banner-content p {
@@ -1045,6 +1045,9 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #650300;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 @media (max-width: 768px) {
@@ -1088,7 +1091,6 @@ body {
 
 .line-body .line-items-img {
   max-width: 102px;
-  height: 102px;
   margin: auto;
   margin-bottom: 40px;
 }
@@ -1294,6 +1296,8 @@ body {
 
 .card {
   border: 1px solid #dee2e6;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -1334,6 +1338,8 @@ body {
 
 .card .card-img {
   height: 256px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 500px) {

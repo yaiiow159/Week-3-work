@@ -18,6 +18,7 @@ $line-bg-color: #aa06010d;
     justify-content: space-between;
     flex-wrap: wrap;
     color: $blood;
+    align-items:baseline;
 
     @media (max-width: 768px) {
         justify-content: center;
@@ -49,7 +50,6 @@ $line-bg-color: #aa06010d;
         }
         &-img {
             max-width: 102px;
-            height: 102px;
             margin: auto;
             margin-bottom: 40px;
         }

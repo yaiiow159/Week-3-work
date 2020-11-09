@@ -1,5 +1,6 @@
 .card {
     border: 1px solid #dee2e6;
+    object-fit: cover;
 
     @media (max-width:768px){
         width: 45%;
@@ -32,7 +33,7 @@
     }
     .card-img {
         height: 256px;
-
+        object-fit: cover;
         @media (max-width:500px){
             width: 100%;
         }

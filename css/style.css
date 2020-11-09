@@ -923,6 +923,13 @@ body {
   transition: color 0.3s;
 }
 
+@media (max-width: 575px) {
+  .navbar-list-items a {
+    padding: 8px 64px;
+    line-height: 28px;
+  }
+}
+
 .navbar-list-items a:hover, .navbar-list-items a:focus {
   color: #000;
 }

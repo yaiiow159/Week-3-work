@@ -1,0 +1,27 @@
+.breadcrumb{
+    display: flex;
+
+
+    .breadcrumb-item{
+        
+        font-size: 16px;
+        line-height: 24px;
+        transition: color 0.3s;
+        cursor: pointer;
+      
+        
+        &:hover,&:focus{
+            color: $bg-color;
+        }
+
+        &:not(:last-child)::after{
+            content: "/";
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+
+        &:last-child{
+            color: $bg-color;
+        }
+    }
+}

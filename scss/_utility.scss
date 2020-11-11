@@ -1,56 +1,51 @@
 /* font setting */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 
-
- 
-@font-face{
+@font-face {
     font-family: custom Regular;
     src: url(~@/assets/fonts/Noto_Sans/Noto_Sans-Regular.ttf) format("truetype");
-    unicode-range:U+4E00-9FFF;
+    unicode-range: U+4E00-9FFF;
 }
 
-@font-face{
+@font-face {
     font-family: custom Regular;
     src: url(~@/assets/fonts/Roboto/Roboto-medium.ttf) format("truetype");
-    unicode-range:U+00-024F;
+    unicode-range: U+00-024F;
 }
 
-@font-face{
+@font-face {
     font-family: custom Bold;
     src: url(~@/assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
-    unicode-range:U+4E00-9FFF;
+    unicode-range: U+4E00-9FFF;
 }
 
-@font-face{
+@font-face {
     font-family: custom Bold;
     src: url(~@/assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
-    unicode-range:U+00-024F;
-} 
-/* variables  */ 
+    unicode-range: U+00-024F;
+}
+/* variables  */
 $space: 8px;
 $font-size: 8px;
-$bg-color: #AA0601;
+$bg-color: #aa0601;
 $blood: #650300;
 $muted: #707070;
 $white: #ffffff;
 $dark: #000;
 
-
-/* css setting */ 
+/* css setting */
 body {
-    font-family: "custom-Bold";    
+    font-family: "custom-Bold";
 }
 
 /* *{
     border: 1px solid #000000 !important;
 } */
 
-
 .container {
     max-width: 1110px;
     margin: 0 auto;
-
 
     &-fluid {
         margin: 0 auto;
@@ -72,25 +67,19 @@ body {
 
 /* position */
 
-.position{
-    &-fixed{
+.position {
+    &-fixed {
         position: fixed;
     }
 
-    &-relative{
+    &-relative {
         position: relative;
     }
 
-    &-absolute{
+    &-absolute {
         position: absolute;
     }
-
 }
-
-
-
-
-
 
 .d-flex {
     display: flex;
@@ -134,61 +123,56 @@ body {
         align-items: space-around;
     }
 
-    &-bottom{
+    &-bottom {
         align-items: flex-end;
     }
 }
 
-
-.h2{
+.h2 {
     font-size: 48px;
     line-height: 72px;
     font-weight: bold;
 
-    @media(max-width: 500px){
+    @media (max-width: 500px) {
         font-size: 32px;
         line-height: 48px;
     }
 }
 
-.lh{
-    &-63{
+.lh {
+    &-63 {
         line-height: 63px;
     }
 }
 
-
 /* font size */
 
-.f{
-    &-1{
+.f {
+    &-1 {
         font-size: 16px;
     }
 
-    &-2{
+    &-2 {
         font-size: 20px;
     }
 
-    &-3{
+    &-3 {
         font-size: 32px;
     }
 
-
-    &-4{
+    &-4 {
         font-size: 36px;
     }
 
-
-    &-5{
+    &-5 {
         font-size: 42px;
     }
 
-    &-6{
+    &-6 {
         font-size: 56px;
     }
 
-
-    &-7{
+    &-7 {
         font-size: 64px;
     }
 }
@@ -196,18 +180,18 @@ body {
 /* text */
 
 .font-medium {
-    font-size: $font-size*2;
+    font-size: $font-size * 2;
 }
 
-.font-bold{
+.font-bold {
     font-weight: 900;
 }
 
 .font-small {
-    font-size: $font-size*1.5;
+    font-size: $font-size * 1.5;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
@@ -241,12 +225,50 @@ body {
         &-6 {
             margin-bottom: $space * 8;
         }
-        &-7{
+        &-7 {
             margin-bottom: $space * 11;
         }
 
-        &-272{
+        &-272 {
             margin-bottom: 272px;
+        }
+    }
+
+    &t {
+        &-0{
+            margin-top: $space *1;
+        }
+
+
+        &-1 {
+            margin-top: $space * 2;
+        }
+
+        &-2 {
+            margin-top: $space * 3;
+        }
+
+        &-3 {
+            margin-top: $space * 4;
+        }
+
+        &-special {
+            margin-top: $space * 5;
+        }
+
+        &-4 {
+            margin-top: $space * 6;
+        }
+
+        &-5 {
+            margin-top: $space * 7;
+        }
+
+        &-6 {
+            margin-top: $space * 8;
+        }
+        &-7 {
+            margin-top: $space * 11;
         }
     }
 
@@ -287,26 +309,26 @@ body {
 .p {
     &b {
         &-1 {
-            padding-bottom: $space* 2;
+            padding-bottom: $space * 2;
         }
         &-2 {
-            padding-bottom: $space* 3;
+            padding-bottom: $space * 3;
         }
         &-3 {
-            padding-bottom: $space* 4;
+            padding-bottom: $space * 4;
         }
         &-4 {
-            padding-bottom: $space* 5;
+            padding-bottom: $space * 5;
         }
         &-5 {
-            padding-bottom: $space* 6;
+            padding-bottom: $space * 6;
         }
 
-        &-6{
-            padding-bottom: $space* 8;
+        &-6 {
+            padding-bottom: $space * 8;
         }
-        &-7{
-            padding-bottom: $space* 10;
+        &-7 {
+            padding-bottom: $space * 10;
         }
     }
 
@@ -329,59 +351,58 @@ body {
     }
 }
 
+.text-white {
+    color: $white;
+}
 
-.text-white { color:$white;}
+.text-red {
+    color: $bg-color;
+}
 
-.text-red{ color:$bg-color;}
+.bg-brown {
+    background-color: $blood;
+}
 
-
-.bg-brown { background-color: $blood; }
-
-.bg-red { background-color:$bg-color;}
-
-
-
-
+.bg-red {
+    background-color: $bg-color;
+}
 
 /* height */
 
-
-.h{
-    &-25{
+.h {
+    &-25 {
         height: 25%;
     }
 
-    &-50{
+    &-50 {
         height: 50%;
     }
 
-    &-75{
+    &-75 {
         height: 75%;
     }
 
-
-    &-100{
+    &-100 {
         height: 100%;
     }
 }
 
-
 /* width */
 
-.w{
-    &-25{
+.w {
+    &-25 {
         width: 25%;
     }
 
-    &-50{
+    &-50 {
         width: 50%;
     }
 
-    &-75{
+    &-75 {
         width: 75%;
     }
 
-    &-100{
+    &-100 {
         width: 100%;
     }
 }

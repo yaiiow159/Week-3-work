@@ -68,7 +68,7 @@
 .footer-inner-items {
     a {
         color: $white;
-        padding: 48px 24px 36px 24px;
+        padding: 48px 24px 36px 0px;
         transition: color 0.3s;
 
         @media (max-width: 768px) {

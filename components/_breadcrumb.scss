@@ -1,6 +1,10 @@
 .breadcrumb{
     display: flex;
 
+    @media (max-width:500px){
+        padding: 0 15px;
+    }
+
 
     .breadcrumb-item{
         
@@ -8,6 +12,10 @@
         line-height: 24px;
         transition: color 0.3s;
         cursor: pointer;
+
+        @media (max-width: 768px){
+            font-size: 14px;
+        }
       
         
         &:hover,&:focus{

@@ -1033,7 +1033,7 @@ body {
   margin-right: 8px;
 }
 
-@media (max-width: width 500px) {
+@media (max-width: 500px) {
   .page-list .page-next .page-next-show {
     display: block;
     margin-bottom: 8px;

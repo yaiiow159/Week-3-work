@@ -1029,6 +1029,7 @@ body {
 }
 
 .page-list .page-next .page-next-show {
+  display: none;
   margin-right: 8px;
 }
 

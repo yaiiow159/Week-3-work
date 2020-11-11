@@ -109,6 +109,7 @@ $blog-info-color: #0a0a0a;
         }
 
         .page-next-show{
+            display: none;
             margin-right: $space;
             @media (max-width: width 500px){
                 display: block;
